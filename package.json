@@ -1,0 +1,1 @@
+{"name":"ph-validation","version":"1.0.0","description":"Philippine field validation","main":"dist/index.js","types":"dist/index.d.ts","scripts":{"build":"tsc","test":"jest"},"keywords":["philippines","validation","tin","sss"],"author":"kon2raya","license":"MIT","devDependencies":{"typescript":"^5.9.0","jest":"^30.0.0","@types/jest":"^30.0.0"}}
