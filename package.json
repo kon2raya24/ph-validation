@@ -1,1 +1,70 @@
-{"name":"ph-validation","version":"1.0.0","description":"Philippine field validation","main":"dist/index.js","types":"dist/index.d.ts","scripts":{"build":"tsc","test":"jest"},"keywords":["philippines","validation","tin","sss"],"author":"kon2raya","license":"MIT","devDependencies":{"typescript":"^5.9.0","jest":"^30.0.0","@types/jest":"^30.0.0"}}
+{
+  "name": "ph-validation",
+  "version": "2.0.0",
+  "description": "Comprehensive Philippine field validation utilities — phone numbers, TIN, SSS, PhilHealth, Pag-IBIG with formatting, parsing, and carrier detection",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --coverageReporters=text-summary",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "philippines",
+    "validation",
+    "tin",
+    "sss",
+    "philhealth",
+    "pagibig",
+    "hdmf",
+    "phone",
+    "mobile",
+    "carrier",
+    "bir",
+    "social-security",
+    "health-insurance",
+    "housing-fund",
+    "filipino",
+    "pinoy",
+    "manila",
+    "davao",
+    "cebu",
+    "typescript"
+  ],
+  "author": "kon2raya",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kon2raya/ph-validation.git"
+  },
+  "homepage": "https://github.com/kon2raya/ph-validation#readme",
+  "bugs": {
+    "url": "https://github.com/kon2raya/ph-validation/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "jest": "^30.0.0",
+    "@types/jest": "^30.0.0",
+    "ts-jest": "^29.0.0"
+  }
+}
