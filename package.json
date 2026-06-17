@@ -62,9 +62,9 @@
     "node": ">=14.0.0"
   },
   "devDependencies": {
-    "typescript": "^5.9.0",
-    "jest": "^30.0.0",
+    "typescript": "^6.0.3",
+    "jest": "^30.4.2",
     "@types/jest": "^30.0.0",
-    "ts-jest": "^29.0.0"
+    "ts-jest": "^29.4.11"
   }
 }
