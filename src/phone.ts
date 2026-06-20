@@ -32,6 +32,9 @@
 import { PhoneInfo, PhilippineCarrier, MOBILE_PREFIXES, LANDLINE_AREA_CODES, TOLL_FREE_PREFIXES } from "./types";
 import { digitsOnly, normalizePhone, isEmpty } from "./utils";
 
+// Type exports for consumers
+// Add specific types as needed
+
 /**
  * Known Philippine mobile prefixes (first 4 digits after country code).
  * These are the leading digits of mobile numbers used in the Philippines.
