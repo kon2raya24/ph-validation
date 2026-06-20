@@ -36,6 +36,9 @@
 import { TINInfo } from "./types";
 import { digitsOnly, insertDashes, isEmpty, hasExactDigits } from "./utils";
 
+// Type exports for consumers
+// Add specific types as needed
+
 /** Valid RDO (Revenue District Office) codes */
 const VALID_RDO_CODES = new Set([
   "001", "002", "003", "004", "005", "006", "007", "008", "009", "010",
