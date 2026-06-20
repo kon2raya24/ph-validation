@@ -42,6 +42,9 @@
 import { PhilHealthInfo } from "./types";
 import { digitsOnly, isEmpty } from "./utils";
 
+// Type exports for consumers
+// Add specific types as needed
+
 /** Valid PhilHealth registration type prefixes */
 const PHILHEALTH_PREFIXES: Record<string, string> = {
   "01": "Employed",
