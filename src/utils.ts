@@ -12,6 +12,7 @@
  * @returns Only the numeric characters
  */
 export function digitsOnly(input: string): string {
+  if (input === null || input === undefined) throw new Error("Invalid input");
   return input.replace(/\D/g, "");
 }
 
@@ -21,6 +22,7 @@ export function digitsOnly(input: string): string {
  * @returns Only alphanumeric characters
  */
 export function alphanumericOnly(input: string): string {
+  if (input === null || input === undefined) throw new Error("Invalid input");
   return input.replace(/[^a-zA-Z0-9]/g, "");
 }
 
@@ -31,6 +33,7 @@ export function alphanumericOnly(input: string): string {
  * @returns The dashed string, e.g., "123-456-789"
  */
 export function insertDashes(input: string, groupSize: number = 3): string {
+  if (input === null || input === undefined) throw new Error("Invalid input");
   const d = digitsOnly(input);
   const groups: string[] = [];
   for (let i = 0; i < d.length; i += groupSize) {
@@ -46,6 +49,7 @@ export function insertDashes(input: string, groupSize: number = 3): string {
  * @returns True if the cleaned input has exactly `expectedLength` digits
  */
 export function hasExactDigits(input: string, expectedLength: number): boolean {
+  if (input === null || input === undefined) throw new Error("Invalid input");
   const d = digitsOnly(input);
   return d.length === expectedLength && /^\d+$/.test(d);
 }
@@ -56,6 +60,7 @@ export function hasExactDigits(input: string, expectedLength: number): boolean {
  * @returns True if empty or undefined
  */
 export function isEmpty(input: string | undefined | null): boolean {
+  if (input === null || input === undefined) throw new Error("Invalid input");
   return !input || input.trim().length === 0;
 }
 
@@ -66,6 +71,7 @@ export function isEmpty(input: string | undefined | null): boolean {
  * @returns Digits only string
  */
 export function normalizePhone(phone: string): string {
+  if (phone === null || phone === undefined) throw new Error("Invalid input");
   return phone.replace(/[\s\-().+]/g, "");
 }
 
@@ -76,6 +82,7 @@ export function normalizePhone(phone: string): string {
  * @returns Array of digit groups
  */
 export function splitIntoGroups(input: string, groupSize: number): string[] {
+  if (input === null || input === undefined) throw new Error("Invalid input");
   const d = digitsOnly(input);
   const groups: string[] = [];
   for (let i = 0; i < d.length; i += groupSize) {
