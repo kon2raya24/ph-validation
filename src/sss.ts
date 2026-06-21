@@ -45,12 +45,6 @@ import { digitsOnly, isEmpty, luhnCheck } from "./utils";
 // Type exports for consumers
 // Add specific types as needed
 
-// Type exports for consumers
-// Add specific types as needed
-
-// Type exports for consumers
-// Add specific types as needed
-
 /** Member type prefix ranges */
 const MEMBER_TYPE_RANGES: Array<{ start: number; end: number; type: SSSMemberType }> = [
   { start: 0, end: 34, type: "regular" },

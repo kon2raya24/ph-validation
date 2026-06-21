@@ -1,12 +1,6 @@
 
 // Type exports for consumers
 // Add specific types as needed
-
-// Type exports for consumers
-// Add specific types as needed
-
-// Type exports for consumers
-// Add specific types as needed
 /**
  * Shared utility functions for Philippine field validation.
  * @module utils
