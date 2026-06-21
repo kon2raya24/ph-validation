@@ -47,6 +47,9 @@ import { digitsOnly, isEmpty } from "./utils";
 // Type exports for consumers
 // Add specific types as needed
 
+// Type exports for consumers
+// Add specific types as needed
+
 /** Valid Pag-IBIG registration type prefixes */
 const PAGIBIG_PREFIXES: Record<string, string> = {
   "10": "Local Employee",
